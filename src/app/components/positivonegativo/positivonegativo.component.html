@@ -1,0 +1,7 @@
+<h1>Numeros positivos o negativos </h1>
+<ul>
+    <li *ngFor="let n of numerosEnteros"  [style.color]="n > 0 ? 'green' : 'red'">
+        {{n}}
+    </li>
+</ul>
+<button (click)="generarRandom()">Añadir numero aleatorio</button>
